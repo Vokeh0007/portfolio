@@ -147,12 +147,188 @@ body {
 }
 
 /* skills */
+.skills {
+    display: inline-block;
+    margin-left: 25vw;
+}
 .skills-center {
     text-align: center;
     font-size: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 7px;
     padding-top: 30px;
 }
+.skills-center span {
+    color: #0ef;
+} 
+.container {
+    width: 50vw;
+    height: 100vh;
+    gap: 20px;
+    padding: 7px;
+    
+}
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+}
+.bar{
+    font-size: 23px;
+}
+.technical-bars .bar{
+    margin: 10px 0;
+}
+.technical-bars .bar:first-child {
+    margin-top: 0;
+}
+.technical-bars .bar:last-child {
+    margin-bottom: 4px;
+}
+.technical-bars .bar .info {
+    margin-bottom: 5px;
+}
+.technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s linear forwards;
+    opacity: 0;
+}
+.technical-bars .bar .progress-line {
+    height: 5px;
+    width: 50vw;
+    background: #000;
+    border-radius: 10px;
+    position: relative;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.technical-bars .bar .progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    border-radius: 10px;
+    position: absolute;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards; 
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span {
+    width: 90%;
+}
+.progress-line.css3 span {
+    width: 80%;
+}
+.progress-line.javascript span {
+    width: 50%;
+}
+.progress-line.python span {
+    width: 55%;
+}
+.progress-line.react span {
+    width: 45%;
+}
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after {
+    content: '90%';
+}
+.progress-line.css3 span::after {
+    content: '80%';
+}
+.progress-line.javascript span::after {
+    content: '50%';
+}
+.progress-line.python span::after {
+    content: '55%';
+}
+.progress-line.react span::after {
+    content: '45%';
+}
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+
+/* Services */
+#services {
+    margin: 9px;
+}
+.services-heading{
+    margin-left: 39vw;
+    color: #0ef;
+}
+#services p{
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2vh;
+}
+#services span{
+    font-family: poppins;
+    font-size: 1.5rem;
+    color: #0ef;
+    font-weight: bold;
+}
+#services ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    gap: 20px;
+    
+}
+#services ul li{
+    background-color: #1f242d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0ef;
+    padding: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+#services ul li img{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px 0 #0ef;
+}
+#services ul li span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0ef;
+    margin-top: 10px;
+    display: block;
+}
+#services ul li p{
+    font-size: 1rem;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
 /* Keyframes */
 
 @keyframes slideRight {
@@ -214,6 +390,16 @@ body {
     }
     100% {
         transform: translateY(0);
+    }
+}
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+@keyframes showText {
+    100% {
+        opacity: 1;
     }
 }
 
