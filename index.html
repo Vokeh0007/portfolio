@@ -9,14 +9,28 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
+        <a href="#" class="desktop-logo">Portfolio</a>
+        <nav class="desktop-navbar">
             <a href="#" style="--i:1;" class="active">Home</a>
             <a href="#" style="--i:2;">About</a>
             <a href="#" style="--i:3;">Skills</a>
             <a href="#" style="--i:4;">Portfolio</a>
             <a href="#" style="--i:5;">Contact</a>
         </nav>
+        <a href="#" class="mobile-logo">Portfolio</a>
+        <nav class="mobile-navbar">
+          <button id="close-menu">
+            <img src="./icon-close.svg" alt="close menu icon" />
+          </button>
+            <a href="#" style="--i:1;" class="active">Home</a>
+            <a href="#" style="--i:2;">About</a>
+            <a href="#" style="--i:3;">Skills</a>
+            <a href="#" style="--i:4;">Portfolio</a>
+            <a href="#" style="--i:5;">Contact</a>
+        </nav>
+        <button id="mobile-menu">
+          <img src="./icon-hamburger.svg" alt="menu icon" />
+        </button>
     </header>
     <section class="home">
         <div class="home-content">
@@ -140,9 +154,34 @@
                 <span>Content Writing</span>
                 <p>Content writing is the process of planning, writing, and editing web content, typically for digital marketing purposes.</p>
               </li>
-              
             </ul>
      </section>
+
+
+     <!-- projects -->
+     <section id="projects">
+        <h1 class="section-heading projects-heading">Projects</h1>
+        <p>Here are some of the projects I have worked on:</p>
+        <ul>
+          <li><img src="./weather.jpg" alt="weather illustration"> <br>
+            <span>Weather App</span>
+          </li>
+          <li> <img src="./todo.jpg" alt="to do app"> <br>
+            <span>Todo App</span>
+          </li>
+          <li> <img src="./calculator.jpg" alt="calculator"> <br>
+            <span>Calculator App</span>
+          </li>
+          <li> <img src="./project1.png" alt="blog"> <br>
+            <span>St Luke medical centre clone</span>
+          </li>
+          <li> <img src="./Screenshot 2024-11-11 090510.png" alt="restaurant"> <br>
+            <span>loopstudios practice</span>
+          </li>
+        </ul> <br>
+        <button class="btn">View All My Projects</button>
+      </section>
+
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>

@@ -10,322 +10,67 @@ body {
     background-color: #1f242d;
     color: #fff;
 }
-.header {
+header {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10px;
+    /* top: 0;
+    left: 0; */
+    width: 100vw;
+    padding: 5px;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    z-index: 100;
+    z-index: 10;
     background-color: #1f242d;
-
-
 }
-.logo {
+.mobile-logo {
     color: #fff;
-    font-size: 25px;
-    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
     text-decoration: none;
-    cursor: default;
-    opacity: 0;
     animation: slideRight 1s ease forwards;
-}  
-.navbar a{
-    display: inline-block;
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: 0.3s;
     opacity: 0;
-    animation: slideTop .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
-    
+    cursor: pointer;
 }
-.navbar a:hover,
-.navbar a.active {  
-    color: #0ef;
+.desktop-navbar {
+    display: none;
+}
+.desktop-logo{
+    display: none;
+}
+.mobile-navbar {
+    display: none;
+}
+#mobile-menu {
+    color: #fff;
+    font-size: 24px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
 }
 
+/* home */
 .home {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 10% 0;
-
-}
-
-.home-content {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    background-color: #1f242d;
+    margin-top: 50px;
+}
+.home-content {
+    display: inline-block;
+    justify-content: center;
 }
 .home-content h3 {
     font-size: 32px;
-    font-weight: 700;
     opacity: 0; 
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
 }
-.home-content h3:nth-last-of-type(2) {
-    margin-bottom: 30px;
-    animation: slideTop 1s ease forwards;
-    animation-delay: .7s;
-}
-.home-content h3 span {
-    color: #0ef;
-}
-.section-heading {
-    font-size: 56px;
-    font-weight: 700;
-    margin: -3px 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 1s;
-}
-.home-content p {
-    font-size: 16px;
-    opacity: 0; 
-    animation: slideLeft 1s ease forwards;
-    animation-delay: .7s;
-}
-.home-img img {
-    max-width: 450px;
-    margin-right: -20px;
-    opacity: 0;
-    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: .2s, 3s;
-    border-radius: 12px;
-}
-.social-media a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #0ef;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #0ef;
-    text-decoration: none;
-    margin: 30px 15px 30px 0;
-    transition: 0.5s ease;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
-}
-.social-media a:hover {
-    background: #0ef;
-    color: #1f242d;
-    box-shadow: 0 0 20px  #0ef;
-}
-.btn {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #0ef;
-    color: #1f242d;
-    font-size: 16px;
-    box-shadow: 0 0 10px  #0ef;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 15px;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: .2s;
-}
-
-/* skills */
-.skills {
-    display: inline-block;
-    margin-left: 25vw;
-}
-.skills-center {
-    text-align: center;
-    font-size: 60px;
-    padding-bottom: 7px;
-    padding-top: 30px;
-}
-.skills-center span {
-    color: #0ef;
-} 
-.container {
-    width: 50vw;
-    height: 100vh;
-    gap: 20px;
-    padding: 7px;
-    
-}
-.heading {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-}
-.bar{
-    font-size: 23px;
-}
-.technical-bars .bar{
-    margin: 10px 0;
-}
-.technical-bars .bar:first-child {
-    margin-top: 0;
-}
-.technical-bars .bar:last-child {
-    margin-bottom: 4px;
-}
-.technical-bars .bar .info {
-    margin-bottom: 5px;
-}
-.technical-bars .bar .info span {
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s linear forwards;
-    opacity: 0;
-}
-.technical-bars .bar .progress-line {
-    height: 5px;
-    width: 50vw;
-    background: #000;
-    border-radius: 10px;
-    position: relative;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-.technical-bars .bar .progress-line span {
-    height: 100%;
-    background-color: #0ef;
-    border-radius: 10px;
-    position: absolute;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards; 
-    transform: scaleX(0);
-    transform-origin: left;
-}
-.progress-line.html span {
-    width: 90%;
-}
-.progress-line.css3 span {
-    width: 80%;
-}
-.progress-line.javascript span {
-    width: 50%;
-}
-.progress-line.python span {
-    width: 55%;
-}
-.progress-line.react span {
-    width: 45%;
-}
-.progress-line span::after {
-    position: absolute;
-    padding: 1px 8px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-.progress-line.html span::after {
-    content: '90%';
-}
-.progress-line.css3 span::after {
-    content: '80%';
-}
-.progress-line.javascript span::after {
-    content: '50%';
-}
-.progress-line.python span::after {
-    content: '55%';
-}
-.progress-line.react span::after {
-    content: '45%';
-}
-.progress-line span::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
 
 
-/* Services */
-#services {
-    margin: 9px;
-}
-.services-heading{
-    margin-left: 39vw;
-    color: #0ef;
-}
-#services p{
-    font-size: 1.4rem;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 2vh;
-}
-#services span{
-    font-family: poppins;
-    font-size: 1.5rem;
-    color: #0ef;
-    font-weight: bold;
-}
-#services ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0;
-    gap: 20px;
-    
-}
-#services ul li{
-    background-color: #1f242d;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px #0ef;
-    padding: 20px;
-    text-align: center;
-    list-style-type: none;
-}
-#services ul li img{
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px 0 #0ef;
-}
-#services ul li span{
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #0ef;
-    margin-top: 10px;
-    display: block;
-}
-#services ul li p{
-    font-size: 1rem;
-    color: white;
-    margin-top: 10px;
-}
+
 
 
 
@@ -402,54 +147,3 @@ body {
         opacity: 1;
     }
 }
-
-
-.about {
-    padding: 20px;
-    margin-top: 45px;
-}
-.about img {
-    width: 24vw;
-    height: 58vh;
-    border-radius: 12px;
-    
-}
-.about-content {
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 20px;
-}
-.left-side {
-    padding: 25px;
-
-}
-#btn{
-    margin-top: 20px;
-    display: inline-block;
-    padding: 12px 28px;
-    background: #0ef;
-    color: #1f242d;
-    font-size: 16px;
-    box-shadow: 0 0 10px  #0ef;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 15px;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: .2s;
-}
-
-.skills-center{
-    text-align: center;
-}
-
-
-
-
-github.com/bradtraversy/50projects50days/tree/master/scroll-animation
-github.com/mattboldt/typed.js
