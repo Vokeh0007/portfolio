@@ -38,13 +38,13 @@
             <h1 class="section-heading">Kevin Kinyanjui</h1>
             <h3>And i'm a <span class="multiple-text"></span></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, esse, cumque eligendi, nihil reiciendis sequi facilis non iste </p>
-            <div class="social-media">
+            <div id="social-media">
                 <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a>
                 <a href="#" style="--i:8;"><i class='bx bxl-twitter'></i></a>
                 <a href="#" style="--i:9;"><i class='bx bxl-instagram-alt' ></i></a>
                 <a href="#" style="--i:10;"><i class='bx bxl-linkedin-square' ></i></a>
             </div>
-            <a href="./Lect1-Intro.pdf" class="btn">Download CV</a>
+            <a href="./Lect1-Intro.pdf" id="btn">Download CV</a>
         </div>
         <div class="home-img">
             <img src="./mine.png" alt="home page illustration">
@@ -127,30 +127,30 @@
             <h1 class="section-heading services-heading">Services</h1>
             <p>I offer the following services:</p>
             <ul>
-              <li><img src="./webdev.jpg" alt="web development image"> <br>
+              <li><img src="./webdev.png" alt="web development image"> <br>
                 <span>Web Development</span>
                 <p>Web development involves creating and maintaining websites, focusing on layout, functionality, and user experience through coding and design.</p>
                 
               </li>
               <li>
-                <img src="./webdesign.jpg" alt="web design image"> <br>
+                <img src="./webdesign.png" alt="web design image"> <br>
                 <span>Web Design</span>
                 <p>Web development involves creating and maintaining websites, focusing on layout, functionality, and user experience through coding and design.</p>
               </li>       
-              <li><img src="./mobileapp.jpg" alt="mobile app development image"> <br>
+              <li><img src="./mobileapp.png" alt="mobile app development image"> <br>
                 <span>Mobile App Development</span>
                 <p>Mobile app development is the process of creating software applications for mobile devices, focusing on functionality, user experience, and platform compatibility to deliver seamless, engaging interactions.</p>
               </li>     
-              <li><img src="./softdev.jpg" alt="software development"> <br>
+              <li><img src="./softdev.png" alt="software development"> <br>
                 <span>Software Development</span>
                 <p>Mobile app development is the process of creating software applications for mobile devices, focusing on functionality, user experience, and platform compatibility to deliver seamless, engaging interactions.</p>
               </li> 
-              <li><img src="./seo.jpg" alt="SEO image"> <br>
+              <li><img src="./seo.png" alt="SEO image"> <br>
                 <span>SEO</span>
                 <p>
                   SEO (Search Engine Optimization) is the practice of optimizing website content and structure to improve visibility and ranking on search engine results pages, aiming to increase organic traffic and enhance user engagement.</p>
               </li>       
-              <li><img src="./conwri.jpg" alt="content writing"> <br>
+              <li><img src="./conwri.png" alt="content writing"> <br>
                 <span>Content Writing</span>
                 <p>Content writing is the process of planning, writing, and editing web content, typically for digital marketing purposes.</p>
               </li>
@@ -163,13 +163,13 @@
         <h1 class="section-heading projects-heading">Projects</h1>
         <p>Here are some of the projects I have worked on:</p>
         <ul>
-          <li><img src="./weather.jpg" alt="weather illustration"> <br>
+          <li><img src="./weather.png" alt="weather illustration"> <br>
             <span>Weather App</span>
           </li>
-          <li> <img src="./todo.jpg" alt="to do app"> <br>
+          <li> <img src="./todo.png" alt="to do app"> <br>
             <span>Todo App</span>
           </li>
-          <li> <img src="./calculator.jpg" alt="calculator"> <br>
+          <li> <img src="./calculator.png" alt="calculator"> <br>
             <span>Calculator App</span>
           </li>
           <li> <img src="./project1.png" alt="blog"> <br>
@@ -179,9 +179,70 @@
             <span>loopstudios practice</span>
           </li>
         </ul> <br>
-        <button class="btn">View All My Projects</button>
+        <button id="btn">View All My Projects</button>
       </section>
 
+      <!-- testimonials -->
+      <section id="testimonials">
+        <h1 class="testimonials-heading">Testimonials</h1>
+        <span>Here is what some of my clients have to say:</span>
+        <div  class="testimonials">
+
+          <div class="testimonial">
+            <img src="./mine.png" alt="image of person">
+            <p>Kevin is a talented web developer who is always willing to go the extra mile to get the job done. He is a great team player and always delivers high-quality work. I would highly recommend him to anyone looking for a skilled developer.</p>
+            <h2>Jane Doe</h2>
+            <h3>CEO, Company Name</h3>
+          </div>
+          <div class="testimonial">
+            <img src="./mine.png" alt="image of person 2">
+            <p>Kevin is a talented web developer who is always willing to go the extra mile to get the job done. He is a great team player and always delivers high-quality work. I would highly recommend him to anyone looking for a skilled developer.</p>
+            <h2>Jane Doe</h2>
+            <h3>CEO, Company Name</h3>
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <!-- testimonials -->
+
+      <!-- contact -->
+      <section id="contact">
+        <div class="heading-contact">
+          <h3><em>feel free to contact me anytime</em></h3> <br>
+          <h4>Contact information</h4>
+        </div>
+        <div class="contact-info">
+          <p>Just ring📞 or text 🗨️</p>
+        <p><ion-icon name="mail"></ion-icon>Email:com00721@uoeld.ac.ke</p>
+        <p><ion-icon name="call"></ion-icon>Phone: +254768023955</p>
+        </div>
+        <p>If you would like to get in touch with me, please fill out the form below:</p>
+        <form action="get">
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Name">
+          <label for="email">Email:</label>
+          <input type="email" placeholder="Email">
+          <label for="message">Message:</label>
+          <textarea placeholder="Message"></textarea> <br>
+          <button>Send Message</button>
+        </form>
+      </section>
+
+        <section id="social-media">
+          <a href="https://x.com/kinyanjui17930149" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="https://facebook.com" target="_blank">
+              <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class='bx bxl-instagram-alt' ></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+              <i class='bx bxl-linkedin-square' ></i>
+            </a>
+      </section>
+
+      <!-- contact -->
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
